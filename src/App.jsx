@@ -28,6 +28,9 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <div className='images-bucket'>
+        <img src="https://picsum.photos/200/300" alt="Random from Picsum 1" />
+      </div>
     </>
   )
 }
