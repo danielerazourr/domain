@@ -1,10 +1,14 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import img1 from './assets/img1.jpg'
+import img2 from './assets/img2.jpg'
+import img3 from './assets/img3.jpg'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const imgArr = [img1, img2, img3];
 
   return (
     <>
@@ -28,9 +32,12 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <div className='images-bucket'>
-        <img src="https://picsum.photos/200/300" alt="Random from Picsum 1" />
+      <div className="image-gallery">
+        {imgArr.map((imgSrc, index) => (
+          <img key={index} src={imgSrc} alt={`Image ${index + 1}`} className="gallery-image" />
+        ))}
       </div>
+      
     </>
   )
 }
