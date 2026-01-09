@@ -37,6 +37,7 @@ function App() {
           <img key={index} src={imgSrc} alt={`Image ${index + 1}`} className="gallery-image" />
         ))}
       </div>
+      <img src="https://images.danicloudflare.eu/Music-Shutterstock-scaled.jpg" alt="Static Image" />
       
     </>
   )
