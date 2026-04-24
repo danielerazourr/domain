@@ -29,7 +29,7 @@ function App() {
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
-      <p>This is a test commit, installed integration</p>
+      <p>This is project after i moved to the organization</p>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
